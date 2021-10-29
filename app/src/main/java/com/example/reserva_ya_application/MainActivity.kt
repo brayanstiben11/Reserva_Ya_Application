@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         iniciar.setOnClickListener()
         {
-            if (email.text.toString() == "brayan" && password.text.toString() == "12345")
+            if (email.text.toString() == "brayan@gmail.com" && password.text.toString() == "12345")
             {
                 val intent = Intent (this, Ver_Hoteles :: class.java)
                 startActivity(intent)
