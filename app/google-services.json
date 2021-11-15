@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935011233654",
+    "project_id": "reserve-ya-db",
+    "storage_bucket": "reserve-ya-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935011233654:android:7d61ac90411a8e0d575457",
+        "android_client_info": {
+          "package_name": "com.example.reserva_ya_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935011233654-b646olaoj7e5rc4baah2v8bf97kbat18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnHmRA06LNKANLiRfrZbJuX01a9fZcweg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935011233654-b646olaoj7e5rc4baah2v8bf97kbat18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
