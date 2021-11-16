@@ -9,11 +9,13 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
 class Registrar : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar)
@@ -35,7 +37,7 @@ class Registrar : AppCompatActivity() {
         {
             if(nombre.text.isNotEmpty() && email.text.isNotEmpty() && pass.text.isNotEmpty()) {
 
-                crearusuario(email.text.toString(),pass.text.toString())
+                crearusuario(email.text.toString(),pass.text.toString(), nombre.text.toString())
             }
             else if (nombre.text.isEmpty() || email.text.isEmpty() || pass.text.isEmpty())
             {
@@ -45,7 +47,7 @@ class Registrar : AppCompatActivity() {
 
     }
 
-    private fun crearusuario (email : String, password : String)
+    private fun crearusuario (email : String, password : String, nombre : String)
     {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -54,7 +56,8 @@ class Registrar : AppCompatActivity() {
                     Log.d("TAG", "createUserWithEmail:success")
                     val user = auth.currentUser
                     Toast.makeText(this,"LA CUENTA FUE CREADA SATISFACTORIAMENTE",Toast.LENGTH_SHORT).show()
-                    next()
+                    db.collection("Perfiles").document(email).set(hashMapOf ("nombre" to nombre, "password" to password))
+                    next(email)
 
                 } else {
                     // If sign in fails, display a message to the user.
@@ -64,9 +67,10 @@ class Registrar : AppCompatActivity() {
                 }
             }
     }
-    private fun next ()
+    private fun next (email: String)
     {
-        val intent = Intent (this, Ver_Hoteles :: class.java )
+        val intent = Intent (this, Perfil :: class.java )
+        intent.putExtra("correo", email)
         startActivity(intent)
     }
 }

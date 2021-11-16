@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/drawable-v24/button_re.xml" value="0.2111111111111111" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_buscar_hoteles.xml" value="0.22" />
-        <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_detalles_hotel1.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_detalles_hotel1.xml" value="0.12" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_hacer_reserva.xml" value="0.18" />
+        <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_hotel_encontrado.xml" value="0.1" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_perfil.xml" value="0.22" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_registrar.xml" value="0.15" />
-        <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_ver_hoteles.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_ver_hoteles.xml" value="0.2" />
         <entry key="..\:/Users/Public/Reserva_Ya_Application/app/src/main/res/layout/activity_ver_reserva_hecha.xml" value="0.13243243243243244" />
       </map>
     </option>

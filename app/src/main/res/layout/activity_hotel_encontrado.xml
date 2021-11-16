@@ -5,31 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondop"
-    tools:context=".Buscar_Hoteles">
+    tools:context=".Hotel_Encontrado">
 
+    <TextView
+        android:id="@+id/infohotel"
+        android:layout_width="332dp"
+        android:layout_height="334dp"
+        android:textAlignment="gravity"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
 
     <Button
-        android:id="@+id/buscar"
-        android:layout_width="143dp"
-        android:layout_height="77dp"
-        android:text="Buscar"
+        android:id="@+id/ir"
+        android:layout_width="252dp"
+        android:layout_height="76dp"
+        android:text="HACER RESERVA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
-
-    <EditText
-        android:id="@+id/buscar1"
-        android:layout_width="330dp"
-        android:layout_height="71dp"
-        android:ems="10"
-        android:hint="Ingresa un nombre de un hotel"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
-
+        app:layout_constraintVertical_bias="0.922" />
 </androidx.constraintlayout.widget.ConstraintLayout>
