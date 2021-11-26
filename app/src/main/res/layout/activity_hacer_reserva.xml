@@ -52,17 +52,17 @@
 
     <EditText
         android:id="@+id/fecha"
-        android:layout_width="309dp"
-        android:layout_height="49dp"
+        android:layout_width="187dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="ingresa la fecha de llegada"
         android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <EditText
         android:id="@+id/telefono"
@@ -89,4 +89,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.951"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/numeror"
+        android:layout_width="177dp"
+        android:layout_height="33dp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/seleccionarf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
 </androidx.constraintlayout.widget.ConstraintLayout>
